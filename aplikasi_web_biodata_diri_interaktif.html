@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata — Siti Nazirah binti Mohd Sufian</title>
+
+    <!-- Muat turun fon Quicksand (utama), Fraunces (tajuk editorial lembut) & Dancing Script (tulisan berangkai Polaroid) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Muat turun Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Konfigurasi Tailwind CSS untuk fon, warna pastel & animasi lembut -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        display: ['Fraunces', 'serif'],
+                        hand: ['Dancing Script', 'cursive'],
+                    },
+                    keyframes: {
+                        floatCloud: {
+                            '0%, 100%': { transform: 'translateY(0px) translateX(0px)' },
+                            '50%': { transform: 'translateY(-14px) translateX(8px)' },
+                        },
+                        twinkle: {
+                            '0%, 100%': { opacity: '0.35', transform: 'scale(0.85)' },
+                            '50%': { opacity: '1', transform: 'scale(1.15)' },
+                        },
+                        heartPop: {
+                            '0%': { opacity: '1', transform: 'translateY(0) scale(0.7)' },
+                            '100%': { opacity: '0', transform: 'translateY(-54px) scale(1.35)' },
+                        },
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    animation: {
+                        'float-cloud': 'floatCloud 9s ease-in-out infinite',
+                        'float-cloud-slow': 'floatCloud 13s ease-in-out 2s infinite',
+                        'twinkle': 'twinkle 3.2s ease-in-out infinite',
+                        'heart-pop': 'heartPop 0.9s ease-out forwards',
+                        'fade-up': 'fadeUp 0.5s ease-out forwards',
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="font-sans antialiased text-[#1e3a5f] min-h-screen relative overflow-x-hidden bg-[#f2f8ff] selection:bg-sky-200 selection:text-sky-900">
+
+    <!-- Latar Belakang Kertas Jurnal Soft Blue + Awan Pastel -->
+    <div class="fixed inset-0 -z-10 pointer-events-none overflow-hidden" aria-hidden="true">
+        <!-- Lapisan Gradien Langit Lembut -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#e6f3ff] via-[#f4f9ff] to-[#eaf4ff]"></div>
+        <!-- Corak Titik Jurnal Halus -->
+        <div class="absolute inset-0 opacity-50 bg-[radial-gradient(#93c5fd_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <!-- Gelembung Cahaya Pastel Terapung -->
+        <div class="absolute -top-24 -left-16 w-80 h-80 sm:w-[28rem] sm:h-[28rem] rounded-full bg-sky-200/55 blur-3xl animate-float-cloud"></div>
+        <div class="absolute top-1/3 -right-24 w-72 h-72 sm:w-[26rem] sm:h-[26rem] rounded-full bg-blue-200/45 blur-3xl animate-float-cloud-slow"></div>
+        <div class="absolute -bottom-24 left-1/4 w-80 h-80 rounded-full bg-indigo-100/60 blur-3xl animate-float-cloud"></div>
+    </div>
+
+    <!-- Bekas Notifikasi Toast (Pengganti alert) -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+    <!-- Bekas Utama Halaman -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-8 sm:space-y-10">
+
+        <!-- =========================================================
+             BAHAGIAN 1: KAD PROFIL UTAMA (AESTHETIC SOFT BLUE HERO)
+             ========================================================= -->
+        <section class="relative bg-white/80 backdrop-blur-xl rounded-[2rem] border border-white shadow-[0_20px_50px_-15px_rgba(56,130,210,0.16)] overflow-hidden">
+            <!-- Jalur Awan Pastel Atas -->
+            <div class="h-28 sm:h-36 w-full bg-gradient-to-r from-[#bae6fd] via-[#93c5fd] to-[#bfdbfe] relative overflow-hidden">
+                <!-- Corak Bintang Halus -->
+                <svg class="absolute top-5 left-8 w-5 h-5 text-white/80 animate-twinkle" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/>
+                </svg>
+                <svg class="absolute top-10 right-20 w-4 h-4 text-white/70 animate-twinkle" style="animation-delay: 1s;" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/>
+                </svg>
+                <svg class="absolute bottom-8 left-1/3 w-3.5 h-3.5 text-white/60 animate-twinkle" style="animation-delay: 1.8s;" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/>
+                </svg>
+
+                <!-- Gelombang Awan Putih Bawah Sepanduk -->
+                <svg class="absolute -bottom-1 left-0 w-full h-10 sm:h-12 text-white/90" preserveAspectRatio="none" viewBox="0 0 1440 100" fill="currentColor">
+                    <path d="M0,55 C240,105 480,10 720,55 C960,100 1200,20 1440,60 L1440,100 L0,100 Z"></path>
+                </svg>
+            </div>
+
+            <!-- Isi Kad Profil Utama -->
+            <div class="px-6 sm:px-10 pb-8 -mt-14 sm:-mt-16 relative z-10">
+                <div class="flex flex-col items-center text-center">
+                    <!-- Gambar Profil Interaktif (Klik terus untuk zum gambar) -->
+                    <div class="relative group">
+                        <div class="p-1.5 rounded-full bg-gradient-to-tr from-sky-300 via-blue-200 to-white shadow-lg shadow-sky-200/80">
+                            <button id="avatar-zoom-btn" type="button" aria-label="Zum Foto Profil Siti Nazirah" class="relative block w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden bg-sky-100 cursor-zoom-in border-4 border-white focus:outline-none focus:ring-2 focus:ring-sky-400">
+                                <img id="avatar-img"
+                                     src="https://res.cloudinary.com/rjl90t75/image/upload/v1789122867/Screenshot_2026-09-11_183225_jtubsf.png"
+                                     onerror="this.onerror=null;this.src='https://placehold.co/320x320/bae6fd/0369a1?text=SN';"
+                                     alt="Foto Profil Siti Nazirah"
+                                     class="w-full h-full object-cover object-[50%_20%] transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-sky-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center text-white text-[11px] font-semibold gap-0.5 print:hidden">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16zm0-11v6m-3-3h6"/>
+                                    </svg>
+                                    <span>Zum</span>
+                                </div>
+                            </button>
+                        </div>
+                        <!-- Lencana Bintang Mini -->
+                        <span class="absolute bottom-1.5 right-1.5 w-7 h-7 rounded-full bg-white shadow-md flex items-center justify-center text-sky-500 text-sm border border-sky-100 pointer-events-none" title="Pelajar PISMP">
+                            ✦
+                        </span>
+                    </div>
+
+                    <!-- Label Pengenalan & Nama Penuh -->
+                    <span class="mt-4 inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold tracking-wide bg-sky-100/80 text-sky-700 border border-sky-200/70">
+                        <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
+                        BIODATA DIRI • BNK 3
+                    </span>
+
+                    <h1 class="mt-3 font-display text-2xl sm:text-3xl font-bold tracking-tight text-[#16324f] leading-snug">
+                        Siti Nazirah binti Mohd Sufian
+                    </h1>
+
+                    <p class="mt-1.5 text-sm sm:text-base font-semibold text-sky-700/80">
+                        Bimbingan dan Kaunseling • IPG Kampus Tengku Ampuan Afzan
+                    </p>
+
+                    <!-- Petikan Singkat Peribadi -->
+                    <p class="mt-3 max-w-lg font-display italic text-xs sm:text-sm text-slate-500">
+                        “Mendidik dengan hati, membimbing dengan empati — melangkah tenang menuju cita-cita.”
+                    </p>
+                </div>
+
+                <!-- =========================================================
+                     GRID BENTO MAKLUMAT DIRI (SEMUA 9 MAKLUMAT WAJIB)
+                     ========================================================= -->
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+
+                    <!-- 1. NAMA -->
+                    <div class="sm:col-span-2 lg:col-span-3 p-4 rounded-2xl bg-gradient-to-r from-[#f0f7ff] to-[#f8fbff] border border-sky-100 hover:border-sky-300/80 hover:shadow-md hover:shadow-sky-100/70 transition-all flex items-center gap-3.5">
+                        <div class="w-10 h-10 rounded-xl bg-white text-sky-500 shadow-sm flex items-center justify-center shrink-0 border border-sky-100">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                        </div>
+                        <div class="min-w-0">
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-sky-500">Nama</p>
+                            <p class="text-sm sm:text-base font-bold text-[#16324f] mt-0.5 break-words">SITI NAZIRAH BINTI MOHD SUFIAN</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. UMUR -->
+                    <div class="p-4 rounded-2xl bg-[#f7fbff] border border-sky-100 hover:border-sky-300/80 hover:-translate-y-0.5 hover:shadow-md hover:shadow-sky-100/70 transition-all flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white text-sky-500 shadow-sm flex items-center justify-center shrink-0 border border-sky-100">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-sky-500">Umur</p>
+                            <p class="text-sm font-bold text-[#16324f] mt-0.5">19 TAHUN</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. TARIKH LAHIR -->
+                    <div class="p-4 rounded-2xl bg-[#f7fbff] border border-sky-100 hover:border-sky-300/80 hover:-translate-y-0.5 hover:shadow-md hover:shadow-sky-100/70 transition-all flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white text-sky-500 shadow-sm flex items-center justify-center shrink-0 border border-sky-100">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-sky-500">Tarikh Lahir</p>
+                            <p class="text-sm font-bold text-[#16324f] mt-0.5">30 DISEMBER 2007</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. TEMPAT TINGGAL -->
+                    <div class="p-4 rounded-2xl bg-[#f7fbff] border border-sky-100 hover:border-sky-300/80 hover:-translate-y-0.5 hover:shadow-md hover:shadow-sky-100/70 transition-all flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white text-sky-500 shadow-sm flex items-center justify-center shrink-0 border border-sky-100">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-sky-500">Tempat Tinggal</p>
+                            <p class="text-sm font-bold text-[#16324f] mt-0.5">BANDAR JENGKA, PAHANG</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. KELAS -->
+                    <div class="p-4 rounded-2xl bg-[#f7fbff] border border-sky-100 hover:border-sky-300/80 hover:-translate-y-0.5 hover:shadow-md hover:shadow-sky-100/70 transition-all flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white text-sky-500 shadow-sm flex items-center justify-center shrink-0 border border-sky-100">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-sky-500">Kelas</p>
+                            <p class="text-sm font-bold text-[#16324f] mt-0.5">BNK 3</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. BIDANG PENGKHUSUSAN -->
+                    <div class="sm:col-span-2 p-4 rounded-2xl bg-[#f7fbff] border border-sky-100 hover:border-sky-300/80 hover:-translate-y-0.5 hover:shadow-md hover:shadow-sky-100/70 transition-all flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white text-sky-500 shadow-sm flex items-center justify-center shrink-0 border border-sky-100">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-sky-500">Bidang Pengkhususan</p>
+                            <p class="text-sm font-bold text-[#16324f] mt-0.5">BIMBINGAN DAN KAUNSELING</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. PENDIDIKAN -->
+                    <div class="sm:col-span-2 lg:col-span-3 p-4 rounded-2xl bg-[#f7fbff] border border-sky-100 hover:border-sky-300/80 hover:-translate-y-0.5 hover:shadow-md hover:shadow-sky-100/70 transition-all flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white text-sky-500 shadow-sm flex items-center justify-center shrink-0 border border-sky-100">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-sky-500">Pendidikan</p>
+                            <p class="text-sm font-bold text-[#16324f] mt-0.5">PROGRAM IJAZAH SARJANA MUDA PERGURUAN (PISMP)</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. INSTITUT -->
+                    <div class="sm:col-span-2 p-4 rounded-2xl bg-[#f7fbff] border border-sky-100 hover:border-sky-300/80 hover:-translate-y-0.5 hover:shadow-md hover:shadow-sky-100/70 transition-all flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white text-sky-500 shadow-sm flex items-center justify-center shrink-0 border border-sky-100">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-sky-500">Institut</p>
+                            <p class="text-sm font-bold text-[#16324f] mt-0.5">IPG KAMPUS TENGKU AMPUAN AFZAN</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. EMEL (Boleh klik untuk salin terus) -->
+                    <button id="copy-email-btn" type="button" class="text-left p-4 rounded-2xl bg-gradient-to-br from-sky-50 to-blue-50/70 border border-sky-200/80 hover:border-sky-400 hover:-translate-y-0.5 hover:shadow-md hover:shadow-sky-100 transition-all flex items-start gap-3 group cursor-pointer" title="Klik untuk salin emel">
+                        <div class="w-9 h-9 rounded-xl bg-white text-sky-500 shadow-sm flex items-center justify-center shrink-0 border border-sky-100 group-hover:scale-105 transition-transform">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <div class="flex items-center justify-between gap-1">
+                                <p class="text-[11px] font-bold uppercase tracking-widest text-sky-500">Emel</p>
+                                <span class="text-[10px] font-semibold text-sky-600 bg-white px-2 py-0.5 rounded-full border border-sky-100">Salin</span>
+                            </div>
+                            <p class="text-xs sm:text-sm font-bold text-sky-800 mt-0.5 break-all">sitinazirahsufian@gmail.com</p>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             BAHAGIAN 2: 3 RUANG GAMBAR POLAROID AESTHETIC
+             ========================================================= -->
+        <section class="relative bg-white/75 backdrop-blur-xl rounded-[2rem] border border-white shadow-[0_20px_50px_-15px_rgba(56,130,210,0.14)] p-6 sm:p-10">
+            <!-- Tajuk Bahagian -->
+            <div class="text-center mb-8 sm:mb-10">
+                <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#16324f]">
+                    small things about me
+                </h2>
+            </div>
+
+            <!-- Tali Gantung Hiasan (Dipaparkan pada skrin sm ke atas) -->
+            <div class="hidden sm:block relative -mb-5 pointer-events-none" aria-hidden="true">
+                <svg class="w-full h-10 text-sky-300/70" viewBox="0 0 900 50" fill="none" preserveAspectRatio="none">
+                    <path d="M20,10 Q450,55 880,10" stroke="currentColor" stroke-width="2" stroke-dasharray="6 6"/>
+                </svg>
+            </div>
+
+            <!-- Grid 3 Bingkai Polaroid -->
+            <div id="polaroid-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 items-center"></div>
+        </section>
+
+        <!-- =========================================================
+             BAHAGIAN 3: RUANG DADU 3D KATA-KATA MOTIVASI
+             ========================================================= -->
+        <section class="relative overflow-hidden bg-gradient-to-br from-[#e0f2fe]/95 via-white/95 to-[#eff6ff]/95 backdrop-blur-xl rounded-[2rem] border border-white shadow-[0_20px_50px_-15px_rgba(56,130,210,0.18)] p-6 sm:p-10">
+            <!-- Hiasan Bulatan Lembut -->
+            <div class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-sky-200/45 blur-2xl pointer-events-none"></div>
+            <div class="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-blue-200/35 blur-2xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-8 sm:gap-10">
+                <!-- Kawasan Dadu 3D Interaktif -->
+                <div class="flex flex-col items-center gap-4 shrink-0">
+                    <div id="dice-trigger" role="button" tabindex="0" aria-label="Baling Dadu Motivasi"
+                         class="group relative w-32 h-32 flex items-center justify-center cursor-pointer select-none focus:outline-none">
+                        <!-- Cahaya Bayang Bawah Dadu -->
+                        <div class="absolute bottom-1 w-20 h-4 rounded-full bg-sky-400/25 blur-md transition-transform duration-500 group-hover:scale-110"></div>
+
+                        <!-- Pentas Perspektif 3D -->
+                        <div class="w-24 h-24 [perspective:700px]">
+                            <div id="dice-cube" class="relative w-full h-full [transform-style:preserve-3d] transition-transform duration-[950ms] ease-[cubic-bezier(0.22,1,0.36,1)]">
+                                <!-- Sisi 1 (Hadapan) -->
+                                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white to-sky-50 border-2 border-sky-200/90 shadow-inner grid grid-cols-3 grid-rows-3 p-3.5 [transform:rotateY(0deg)_translateZ(48px)]">
+                                    <span></span><span></span><span></span>
+                                    <span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span>
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <!-- Sisi 2 (Kanan) -->
+                                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white to-sky-50 border-2 border-sky-200/90 shadow-inner grid grid-cols-3 grid-rows-3 p-3.5 [transform:rotateY(90deg)_translateZ(48px)]">
+                                    <span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span><span></span>
+                                    <span></span><span></span><span></span>
+                                    <span></span><span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span>
+                                </div>
+                                <!-- Sisi 3 (Belakang) -->
+                                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white to-sky-50 border-2 border-sky-200/90 shadow-inner grid grid-cols-3 grid-rows-3 p-3.5 [transform:rotateY(180deg)_translateZ(48px)]">
+                                    <span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span><span></span>
+                                    <span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span>
+                                    <span></span><span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span>
+                                </div>
+                                <!-- Sisi 4 (Kiri) -->
+                                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white to-sky-50 border-2 border-sky-200/90 shadow-inner grid grid-cols-3 grid-rows-3 p-3.5 [transform:rotateY(-90deg)_translateZ(48px)]">
+                                    <span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span>
+                                    <span></span><span></span><span></span>
+                                    <span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span>
+                                </div>
+                                <!-- Sisi 5 (Atas) -->
+                                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white to-sky-50 border-2 border-sky-200/90 shadow-inner grid grid-cols-3 grid-rows-3 p-3.5 [transform:rotateX(90deg)_translateZ(48px)]">
+                                    <span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span>
+                                    <span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span>
+                                    <span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span>
+                                </div>
+                                <!-- Sisi 6 (Bawah) -->
+                                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white to-sky-50 border-2 border-sky-200/90 shadow-inner grid grid-cols-3 grid-rows-3 p-3.5 [transform:rotateX(-90deg)_translateZ(48px)]">
+                                    <span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span>
+                                    <span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span>
+                                    <span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span><span></span><span class="w-3.5 h-3.5 m-auto rounded-full bg-sky-500 shadow-sm"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span id="dice-badge" class="px-3.5 py-1 rounded-full text-xs font-bold bg-white text-sky-600 border border-sky-200 shadow-sm">
+                        Sisi #1 • Klik Dadu
+                    </span>
+                </div>
+
+                <!-- Kad Paparan Kata-Kata Motivasi -->
+                <div class="flex-1 text-center md:text-left space-y-3.5">
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-sky-500 text-white shadow-sm shadow-sky-300/60">
+                            🎲 Dadu Kata-Kata Motivasi
+                        </span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-white/85 border border-sky-100 shadow-sm">
+                        <blockquote id="quote-text" class="font-display italic text-lg sm:text-xl font-medium text-[#16324f] leading-relaxed transition-all duration-300">
+                            “Setiap langkah kecil hari ini sedang membina seorang guru dan kaunselor hebat pada masa hadapan.”
+                        </blockquote>
+                        <p id="quote-author" class="mt-2.5 text-xs sm:text-sm font-semibold text-sky-600/80">
+                            — Nota Semangat PISMP
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-1 print:hidden">
+                        <button id="roll-btn" type="button" class="px-5 py-2.5 rounded-full text-sm font-bold bg-gradient-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 text-white shadow-md shadow-sky-300/60 transition-all active:scale-95 flex items-center gap-2">
+                            <span>Baling Dadu</span>
+                            <span aria-hidden="true">✨</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Zum Gambar (Lightbox) -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-8 bg-[#0f2540]/80 backdrop-blur-md transition-opacity duration-300 opacity-0" role="dialog" aria-modal="true" aria-label="Paparan Zum Gambar">
+        <button id="lightbox-close" type="button" aria-label="Tutup paparan zum" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full bg-white/90 hover:bg-white text-[#16324f] shadow-lg flex items-center justify-center transition-transform hover:scale-105 active:scale-95 cursor-pointer">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+
+        <div id="lightbox-content" class="relative max-w-3xl w-full flex flex-col items-center transform scale-95 transition-transform duration-300">
+            <div class="p-2.5 sm:p-3 bg-white rounded-2xl shadow-2xl border border-sky-100 max-w-full">
+                <img id="lightbox-img" src="" alt="Gambar Dizum" class="max-h-[75vh] max-w-full w-auto h-auto rounded-xl object-contain block">
+            </div>
+            <p id="lightbox-caption" class="mt-4 font-hand text-3xl sm:text-4xl font-bold text-white drop-shadow text-center"></p>
+        </div>
+    </div>
+
+    <!-- Logik JavaScript Aplikasi -->
+    <script>
+        /**
+         * Kunci storan setempat untuk gambar profil, polaroid & kiraan hati.
+         */
+        const STORAGE_KEY = 'nazirah_softblue_scrapbook_v7';
+
+        /**
+         * Koleksi kata-kata motivasi bagi setiap sisi dadu (1 hingga 6).
+         */
+        const MOTIVATION_QUOTES = [
+            {
+                face: 1,
+                tag: 'Semangat Pendidik',
+                text: '“Setiap langkah kecil hari ini sedang membina seorang guru dan kaunselor hebat pada masa hadapan.”',
+                author: '— Nota Semangat PISMP'
+            },
+            {
+                face: 2,
+                tag: 'Jiwa Kaunselor',
+                text: '“Telinga yang sudi mendengar dan hati yang penuh empati mampu menyembuhkan lebih banyak jiwa daripada seribu kata.”',
+                author: '— Inspirasi Bimbingan & Kaunseling'
+            },
+            {
+                face: 3,
+                tag: 'Ketenangan Hati',
+                text: '“Seperti langit biru yang luas, beri ruang pada diri sendiri untuk berehat, bernafas, dan terus bersinar.”',
+                author: '— Pesanan Soft Blue'
+            },
+            {
+                face: 4,
+                tag: 'Keberanian & Impian',
+                text: '“Jangan takut melangkah perlahan; yang penting kamu tidak pernah berhenti menuju cita-cita.”',
+                author: '— Langkah Kejayaan'
+            },
+            {
+                face: 5,
+                tag: 'Sinar Harapan',
+                text: '“Guru yang ikhlas bukan sekadar mengajar ilmu, tetapi menyalakan cahaya harapan di dalam hati setiap pelajar.”',
+                author: '— Aspirasi IPGKTAA'
+            },
+            {
+                face: 6,
+                tag: 'Percaya Diri',
+                text: '“Kamu jauh lebih kuat, lebih bijak, dan lebih berharga daripada apa yang kamu sangkakan. Teruskan melangkah!”',
+                author: '— Afirmasi Harian'
+            }
+        ];
+
+        /**
+         * Sudut putaran 3D bagi memaparkan sisi dadu 1 hingga 6 menghadap pengguna.
+         */
+        const DICE_ROTATIONS = {
+            1: { x: 0, y: 0 },
+            2: { x: 0, y: -90 },
+            3: { x: 0, y: 180 },
+            4: { x: 0, y: 90 },
+            5: { x: -90, y: 0 },
+            6: { x: 90, y: 0 }
+        };
+
+        /**
+         * Data lalai bagi gambar profil, 3 bingkai Polaroid, dan sokongan hati.
+         */
+        const DEFAULT_STATE = {
+            avatar: 'https://res.cloudinary.com/rjl90t75/image/upload/v1789122867/Screenshot_2026-09-11_183225_jtubsf.png',
+            loves: 30,
+            polaroids: [
+                {
+                    img: 'https://res.cloudinary.com/rjl90t75/image/upload/v1795662560/4a97c469-018e-49ab-97dc-ada1696b5b8b.png',
+                    caption: 'BNK 3'
+                },
+                {
+                    img: 'https://res.cloudinary.com/rjl90t75/image/upload/v1795662570/308f7a57-bc77-4ac3-a1c3-0a5e395a7af5.png',
+                    caption: 'SITI NAZIRAH'
+                },
+                {
+                    img: 'https://res.cloudinary.com/rjl90t75/image/upload/v1795662533/46bc14a9-bdef-4393-8594-19fbafe3a2a9.png',
+                    caption: 'AFZAN HT (GIRLS)'
+                }
+            ]
+        };
+
+        let appState = loadState();
+        let currentFace = 1;
+        let spinCount = 0;
+        let isRolling = false;
+
+        /**
+         * Memuatkan keadaan aplikasi daripada localStorage dengan pengendalian ralat.
+         */
+        function loadState() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                if (!raw) return structuredClone(DEFAULT_STATE);
+                const parsed = JSON.parse(raw);
+                return {
+                    avatar: parsed.avatar || DEFAULT_STATE.avatar,
+                    loves: typeof parsed.loves === 'number' ? parsed.loves : DEFAULT_STATE.loves,
+                    polaroids: Array.isArray(parsed.polaroids) && parsed.polaroids.length === 3
+                        ? parsed.polaroids
+                        : structuredClone(DEFAULT_STATE.polaroids)
+                };
+            } catch (err) {
+                console.warn('Gagal memuatkan data setempat:', err);
+                return structuredClone(DEFAULT_STATE);
+            }
+        }
+
+        /**
+         * Menyimpan keadaan aplikasi ke dalam localStorage.
+         */
+        function saveState() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+            } catch (err) {
+                showToast('Saiz gambar agak besar untuk storan pelayar, namun masih dipaparkan buat masa ini.');
+            }
+        }
+
+        /**
+         * Memaparkan notifikasi toast lembut (pengganti alert).
+         */
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'pointer-events-auto px-4 py-2.5 rounded-2xl bg-[#16324f] text-white text-xs sm:text-sm font-semibold shadow-lg shadow-sky-900/20 border border-sky-400/30 animate-fade-up';
+            toast.textContent = message;
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-2', 'transition-all', 'duration-300');
+                setTimeout(() => toast.remove(), 300);
+            }, 2600);
+        }
+
+        /**
+         * Menyalin teks ke papan keratan menggunakan document.execCommand('copy') agar serasi dengan iFrame.
+         */
+        function copyToClipboard(text, successMsg) {
+            try {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.setAttribute('readonly', '');
+                textarea.style.position = 'fixed';
+                textarea.style.opacity = '0';
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                showToast(successMsg);
+            } catch (err) {
+                showToast('Tidak dapat menyalin teks buat masa ini.');
+            }
+        }
+
+        /**
+         * Memaparkan 3 bingkai Polaroid dengan gaya washi tape pastel & kapsyen boleh sunting.
+         */
+        function renderPolaroids() {
+            const grid = document.getElementById('polaroid-grid');
+            grid.innerHTML = '';
+
+            const rotations = ['sm:-rotate-2', 'sm:scale-[1.04] z-10', 'sm:rotate-2'];
+            const tapeColors = ['bg-sky-200/85', 'bg-blue-200/85', 'bg-indigo-200/80'];
+
+            appState.polaroids.forEach((item, idx) => {
+                const card = document.createElement('div');
+                card.className = `relative group bg-white p-3.5 pb-5 rounded-xl shadow-[0_14px_30px_-10px_rgba(30,64,120,0.18)] border border-sky-100/90 transition-all duration-300 hover:rotate-0 hover:-translate-y-1.5 hover:shadow-[0_20px_38px_-10px_rgba(56,130,210,0.28)] ${rotations[idx]}`;
+
+                // Pita pelekat washi di bahagian atas bingkai
+                const tape = document.createElement('div');
+                tape.className = `absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 ${tapeColors[idx]} backdrop-blur-sm rounded-sm shadow-sm rotate-[-2deg] border border-white/60 pointer-events-none`;
+                card.appendChild(tape);
+
+                // Kawasan Gambar Polaroid (Klik untuk zum gambar)
+                // Foto kiri (BNK 3) & Foto kanan (AFZAN HT) mengikut bingkai gambar asal agar nampak penuh
+                const isFullFrame = idx === 0 || idx === 2;
+                const imgBtn = document.createElement('button');
+                imgBtn.type = 'button';
+                imgBtn.setAttribute('aria-label', `Zum gambar ${item.caption || `Polaroid ${idx + 1}`}`);
+                imgBtn.className = isFullFrame
+                    ? 'relative block w-full overflow-hidden rounded-lg bg-sky-50 cursor-zoom-in border border-sky-100/80 focus:outline-none focus:ring-2 focus:ring-sky-400'
+                    : 'relative block aspect-[4/4.3] w-full overflow-hidden rounded-lg bg-sky-50 cursor-zoom-in border border-sky-100/80 focus:outline-none focus:ring-2 focus:ring-sky-400';
+
+                const img = document.createElement('img');
+                img.src = item.img;
+                img.alt = item.caption || `Foto Polaroid ${idx + 1}`;
+                img.className = isFullFrame
+                    ? 'w-full h-auto block transition-transform duration-500 group-hover:scale-105'
+                    : 'w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105';
+                img.onerror = function () {
+                    this.onerror = null;
+                    this.src = `https://placehold.co/400x430/e0f2fe/0284c7?text=Foto+${idx + 1}`;
+                };
+
+                const overlay = document.createElement('div');
+                overlay.className = 'absolute inset-0 bg-sky-900/35 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center text-white text-xs font-semibold gap-1 print:hidden';
+                overlay.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16zm0-11v6m-3-3h6"/>
+                    </svg>
+                    <span>Zum Gambar</span>
+                `;
+
+                imgBtn.appendChild(img);
+                imgBtn.appendChild(overlay);
+                imgBtn.addEventListener('click', () => {
+                    openLightbox(appState.polaroids[idx].img, appState.polaroids[idx].caption);
+                });
+                card.appendChild(imgBtn);
+
+                // Kapsyen Tulisan Berangkai (Boleh klik untuk sunting terus)
+                const captionInput = document.createElement('input');
+                captionInput.type = 'text';
+                captionInput.value = item.caption;
+                captionInput.setAttribute('aria-label', `Kapsyen Polaroid ${idx + 1}`);
+                captionInput.className = 'mt-3.5 w-full text-center font-hand text-2xl font-bold text-[#1e3a5f] bg-transparent border-b border-transparent hover:border-sky-200 focus:border-sky-400 focus:outline-none px-1 py-0.5 transition-colors';
+                captionInput.addEventListener('input', (e) => {
+                    appState.polaroids[idx].caption = e.target.value;
+                    saveState();
+                });
+                card.appendChild(captionInput);
+
+                grid.appendChild(card);
+            });
+        }
+
+        /**
+         * Membuka modal zum gambar (lightbox) dengan animasi lembut.
+         */
+        function openLightbox(imgSrc, captionText) {
+            const modal = document.getElementById('lightbox-modal');
+            const content = document.getElementById('lightbox-content');
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+
+            img.src = imgSrc;
+            img.alt = captionText || 'Gambar Dizum';
+            caption.textContent = captionText || '';
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+
+            requestAnimationFrame(() => {
+                modal.classList.remove('opacity-0');
+                content.classList.remove('scale-95');
+                content.classList.add('scale-100');
+            });
+        }
+
+        /**
+         * Menutup modal zum gambar (lightbox).
+         */
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            const content = document.getElementById('lightbox-content');
+
+            modal.classList.add('opacity-0');
+            content.classList.remove('scale-100');
+            content.classList.add('scale-95');
+
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.classList.remove('overflow-hidden');
+            }, 250);
+        }
+
+        /**
+         * Membaling dadu 3D dan mengemas kini kata-kata motivasi secara rawak.
+         */
+        function rollMotivationDice() {
+            if (isRolling) return;
+            isRolling = true;
+
+            // Pilih sisi baharu yang berbeza daripada sisi semasa
+            let nextFace = Math.floor(Math.random() * 6) + 1;
+            if (nextFace === currentFace) {
+                nextFace = (nextFace % 6) + 1;
+            }
+            currentFace = nextFace;
+            spinCount += 1;
+
+            const cube = document.getElementById('dice-cube');
+            const target = DICE_ROTATIONS[nextFace];
+            const extraX = spinCount * 360;
+            const extraY = spinCount * 360;
+
+            cube.style.transform = `rotateX(${target.x + extraX}deg) rotateY(${target.y + extraY}deg)`;
+
+            const quoteText = document.getElementById('quote-text');
+            quoteText.classList.add('opacity-40', 'scale-95');
+
+            setTimeout(() => {
+                const selected = MOTIVATION_QUOTES[nextFace - 1];
+                document.getElementById('dice-badge').textContent = `Sisi #${nextFace} • Klik Lagi`;
+                quoteText.textContent = selected.text;
+                document.getElementById('quote-author').textContent = selected.author;
+                quoteText.classList.remove('opacity-40', 'scale-95');
+                isRolling = false;
+            }, 650);
+        }
+
+        /**
+         * Inisialisasi semua elemen & pendengar acara apabila halaman dimuatkan.
+         */
+        document.addEventListener('DOMContentLoaded', () => {
+            // Papar gambar profil tersimpan
+            document.getElementById('avatar-img').src = appState.avatar;
+
+            // Papar 3 ruang Polaroid
+            renderPolaroids();
+
+            // Klik gambar profil untuk zum masuk
+            document.getElementById('avatar-zoom-btn').addEventListener('click', () => {
+                openLightbox(appState.avatar, 'Siti Nazirah binti Mohd Sufian');
+            });
+
+            // Tutup modal zum apabila klik butang tutup, kawasan luar, atau kekunci Escape
+            document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+            document.getElementById('lightbox-modal').addEventListener('click', (e) => {
+                if (e.target.id === 'lightbox-modal') {
+                    closeLightbox();
+                }
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !document.getElementById('lightbox-modal').classList.contains('hidden')) {
+                    closeLightbox();
+                }
+            });
+
+            // Butang Salin Emel
+            document.getElementById('copy-email-btn').addEventListener('click', () => {
+                copyToClipboard('sitinazirahsufian@gmail.com', 'Emel berjaya disalin!');
+            });
+
+            // Interaksi Dadu 3D (Klik butang, klik dadu, atau tekan Enter/Space)
+            document.getElementById('roll-btn').addEventListener('click', rollMotivationDice);
+            const diceTrigger = document.getElementById('dice-trigger');
+            diceTrigger.addEventListener('click', rollMotivationDice);
+            diceTrigger.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    rollMotivationDice();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
